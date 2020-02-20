@@ -110,7 +110,6 @@ section {
 
 body {
 	line-height: 1;
-
 }
 
 ol,
@@ -143,8 +142,81 @@ table {
 
 html,
 body {
+	box-sizing: border-box;
+	// font-size: 62.5%;
 	height: 100%;
-	color: @backgroundColor;
+	margin: 0% 15%;
+	max-width: 100%;
 }
 
+// less variables 
 @backgroundColor: green;
+@textcolor: gray;
+// end of less variables
+
+
+.header {
+	width: 800px;
+	margin: 50px auto;
+
+	header {
+		width: 100%;
+
+		nav {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			text-decoration: none;
+
+			a {
+				font-size: 1.5rem;
+				text-decoration: none;
+				color: @textcolor;
+			}
+
+			// end of a links tag
+		}
+
+		// end of nav tag
+	}
+
+	// end of header tag
+}
+
+// end of header div
+
+.darkbg {
+	background-color: green;
+	margin-left: 40%;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.smallbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7%;
+
+}
+
+.profile {
+	width: 50%;
+	margin-right: 10%;
+}
+
+.workex {
+	width: 50%;
+	margin-right: 10%;
+}
+
+ul {
+	list-style-type: disc;
+}
