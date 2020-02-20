@@ -172,6 +172,17 @@ body {
 	text-align: center;
 }
 
+.flexcenter() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.twocolumns() {
+	width: 50%;
+	margin-right: 10%;
+}
+
 .container {
 
 
@@ -187,6 +198,10 @@ body {
 				display: flex;
 				justify-content: space-evenly;
 				text-decoration: none;
+
+				@media (max-width: 500px) {
+					.flexcenter()
+				}
 
 				a {
 					font-size: 1.5rem;
@@ -206,9 +221,7 @@ body {
 	// end of header div
 
 	.darkbg {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		.flexcenter();
 
 
 		.intro {
@@ -242,6 +255,10 @@ body {
 			display: flex;
 			justify-content: space-evenly;
 			text-decoration: none;
+
+			@media (max-width: 500px) {
+				.flexcenter()
+			}
 		}
 
 		a {
@@ -251,29 +268,40 @@ body {
 		}
 
 		// closing tag for nav
+
 	}
 
 	// closing tag for footer
 
 	.details {
+
+
+
 		.smallbox {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 7%;
 
+
+			@media (max-width: 500px) {
+				width: 100%;
+				.centeredtext();
+				margin-right: 10px;
+				flex-direction: column;
+
+			}
 		}
+
 
 		// end of smallbox
 
 		.profile {
-			width: 50%;
-			margin-right: 10%;
+			.twocolumns();
 		}
 
 		// end of profile
 		.workex {
-			width: 50%;
-			margin-right: 10%;
+			.twocolumns();
 		}
 
 		// end of workex
@@ -290,3 +318,5 @@ body {
 	}
 
 }
+
+//media queries
