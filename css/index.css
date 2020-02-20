@@ -155,6 +155,23 @@ body {
   text-decoration: none;
   color: gray;
 }
+footer {
+  width: 100%;
+  padding: 10px 2%;
+  margin-top: 10px;
+}
+footer nav {
+  padding: 20px 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+footer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
 .darkbg {
   background-color: green;
   margin-left: 40%;
@@ -182,8 +199,4 @@ h1 {
 }
 ul {
   list-style-type: disc;
-}
-footer {
-  width: 100%;
-  background: black;
 }
