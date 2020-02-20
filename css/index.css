@@ -2,6 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Tomorrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Tomorrow Regular'), local('Tomorrow-Regular'), url(https://fonts.gstatic.com/s/tomorrow/v2/WBLmrETNbFtZCeGqgRXSe2U.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -105,7 +119,8 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -130,6 +145,11 @@ table {
 * {
   box-sizing: border-box;
 }
+h1,
+h2 {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 900;
+}
 html,
 body {
   box-sizing: border-box;
@@ -137,66 +157,76 @@ body {
   margin: 0% 15%;
   max-width: 100%;
 }
-.header {
-  width: 800px;
+.container .header {
+  width: 100%;
   margin: 50px auto;
 }
-.header header {
+.container .header header {
   width: 100%;
 }
-.header header nav {
+.container .header header nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
 }
-.header header nav a {
+.container .header header nav a {
   font-size: 1.5rem;
   text-decoration: none;
   color: gray;
 }
-footer {
+.container footer {
   width: 100%;
   padding: 10px 2%;
   margin-top: 10px;
 }
-footer nav {
+.container footer nav {
   padding: 20px 2%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
 }
-footer a {
+.container footer a {
   font-size: 1.5rem;
   text-decoration: none;
   color: gray;
 }
-.darkbg {
+.container .darkbg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: green;
-  margin-left: 40%;
 }
-h1 {
+.container .whyme {
+  margin-top: 10px;
+  text-align: center;
+}
+.container .whyme h2 {
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
+.container h1 {
   font-size: 3em;
 }
-.intro {
+.container .intro {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.smallbox {
+.container .smallbox {
   display: flex;
   justify-content: space-between;
   margin-top: 7%;
 }
-.profile {
+.container .profile {
   width: 50%;
   margin-right: 10%;
 }
-.workex {
+.container .workex {
   width: 50%;
   margin-right: 10%;
 }
-ul {
+.container ul {
   list-style-type: disc;
 }
