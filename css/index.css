@@ -183,3 +183,7 @@ h1 {
 ul {
   list-style-type: disc;
 }
+footer {
+  width: 100%;
+  background: black;
+}
