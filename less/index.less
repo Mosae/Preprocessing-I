@@ -167,6 +167,11 @@ body {
 @textcolor: gray;
 // end of less variables
 
+//Mixins 
+.centeredtext() {
+	text-align: center;
+}
+
 .container {
 
 
@@ -204,11 +209,10 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: green;
+
 
 		.intro {
-			text-align: center;
-
+			.centeredtext();
 		}
 
 		//end tag for intro
@@ -218,7 +222,7 @@ body {
 
 	.whyme {
 		margin-top: 10px;
-		text-align: center;
+		.centeredtext();
 
 		h2 {
 			padding-bottom: 5px;
