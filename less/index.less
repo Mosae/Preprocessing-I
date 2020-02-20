@@ -200,6 +200,32 @@ body {
 
 	// end of header div
 
+	.darkbg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: green;
+
+		.intro {
+			text-align: center;
+
+		}
+
+		//end tag for intro
+	}
+
+	// end tag for darkbg
+
+	.whyme {
+		margin-top: 10px;
+		text-align: center;
+
+		h2 {
+			padding-bottom: 5px;
+			font-size: 1.3rem;
+		}
+	}
+
 	footer {
 		width: 100%;
 		padding: 10px 2%;
@@ -225,55 +251,38 @@ body {
 
 	// closing tag for footer
 
-	.darkbg {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: green;
+	.details {
+		.smallbox {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 7%;
 
-	}
-
-	.whyme {
-		margin-top: 10px;
-		text-align: center;
-
-		h2 {
-			padding-bottom: 5px;
-			font-size: 1.3rem;
 		}
+
+		// end of smallbox
+
+		.profile {
+			width: 50%;
+			margin-right: 10%;
+		}
+
+		// end of profile
+		.workex {
+			width: 50%;
+			margin-right: 10%;
+		}
+
+		// end of workex
 	}
 
+	//end of details
 
+	ul {
+		list-style-type: disc;
+	}
 
 	h1 {
 		font-size: 3em;
 	}
 
-	.intro {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-
-	.smallbox {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 7%;
-
-	}
-
-	.profile {
-		width: 50%;
-		margin-right: 10%;
-	}
-
-
-	.workex {
-		width: 50%;
-		margin-right: 10%;
-	}
-
-	ul {
-		list-style-type: disc;
-	}
 }
