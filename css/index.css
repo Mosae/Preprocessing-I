@@ -1,1 +1,286 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Tomorrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Tomorrow Regular'), local('Tomorrow-Regular'), url(https://fonts.gstatic.com/s/tomorrow/v2/WBLmrETNbFtZCeGqgRXSe2U.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 900;
+}
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0% 15%;
+  max-width: 100%;
+  background-color: #e5e5e5;
+}
+.container .header {
+  width: 100%;
+  margin: 50px auto;
+}
+.container .header header {
+  width: 100%;
+  height: 10vh;
+  padding: 10px 2%;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container .header header {
+    padding: 10px 2%;
+  }
+}
+.container .header header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container .header header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .header header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
+.container .darkbg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container .darkbg {
+    padding: 100px;
+  }
+}
+.container .darkbg .intro {
+  text-align: center;
+}
+.container .whyme {
+  margin-top: 10px;
+  text-align: center;
+}
+.container .whyme h2 {
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
+.container footer {
+  width: 100%;
+  padding: 10px 2%;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-style: dashed;
+}
+.container footer nav {
+  padding: 20px 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container footer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
+.container .details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .details .smallbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+@media (max-width: 500px) {
+  .container .details .smallbox {
+    flex-direction: column;
+  }
+}
+.container .details .profile {
+  width: 50%;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .container .details .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container .details .workex {
+  width: 50%;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .container .details .workex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container ul {
+  list-style-type: disc;
+}
+.container h1 {
+  font-size: 3em;
+}
